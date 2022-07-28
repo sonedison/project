@@ -1,0 +1,110 @@
+
+body {
+  font-family: "Lato", sans-serif;
+}
+.sidebar {
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(#8c8888,#4f4fd5,#31d531);
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+.sidebar>h1{
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+.sidebar>ul>li{
+  list-style-type: none;
+}
+.sidebar>ul>li>a{
+  font-size: 23px;
+  color: #b8b8bb;
+  line-height: 60px;
+}
+.sidebar>ul>li>a>i{
+  padding-left: 10px;
+}
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: yellow;
+}
+.content>.row>.col-6{
+  margin-top: 100px;
+}
+#About{
+  color: white;
+}
+input,textarea{
+  border: 2px solid #22bfe3;
+border-radius: 20px;
+background-color: transparent;
+color: white;
+padding: 10px;
+}
+
+.main {
+  margin-left: 210px; /* Same as the width of the sidenav */
+  padding: 0px 40px 0px 40px;
+  background-color:skyblue;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+.user-logo {
+  height: 150px;
+  width: 150px;
+  padding: 25px;
+}
+.user-logo img {
+  height: 100%;
+  width: 100%;
+  border: 8px double #1f1f1f;
+  border-radius: 50%;
+  border-color: black;
+}
+body{
+  background-image: url('./stars-gb8274b39c_1920.png');
+  height: 600px;
+}
+
+@media screen and (min-width:100px) and (max-width: 600px) {
+
+  .sidebar{
+    display: none;
+  }
+  .content>.row>.col-6{
+    margin-top: 50px;
+    padding-right: 20px;
+  }
+  img{
+    width:500px;
+    padding-left: 20px;
+  }
+  .content>.row>.col-4>#aboutContent{
+    margin-top: 360px;
+    margin-left: -140px;
+  }
+  .content>.row>.col-4>h1{
+    margin-left: -140px;
+  }
+  .content>.row>.col-4>p{
+    margin-left: -160px;
+  }
+  .content>.row>.col-4>button{
+    margin-left: -140px;
+  }
+}
